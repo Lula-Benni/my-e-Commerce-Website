@@ -62,7 +62,6 @@ footer p{
 }
 .cart-btns{
     display: flex;
-    padding-left: 6rem;
 }
 .cart-btns button{
     background-color: rgb(93, 127, 251);
@@ -76,4 +75,45 @@ footer p{
 }
 .add-btn button{
     width: 19px;
+}
+.info button{
+    background-color: rgb(93, 127, 251);
+}
+.add-to-cart-btn button{
+    background-color: rgb(93, 127, 251);
+    margin-left: 48%;
+    border: none;
+    width: 110px;
+    height: 40px;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+.add-to-cart-btn a{
+    text-decoration: none;
+}
+.about{
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-left: 35%;
+    width: 30%;
+}
+.about h5{
+    padding: 20px;
+}
+.about p{
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.contact{
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-left: 35%;
+    width: 30%;
+}
+.contact h5{
+    padding: 20px;
+}
+.contact p{
+    padding-left: 20px;
+    padding-right: 10px;
 }
