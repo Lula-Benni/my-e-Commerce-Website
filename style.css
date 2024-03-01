@@ -24,3 +24,19 @@ footer p{
     justify-content: center;
     align-items: center;
 }
+.item-info{
+    margin-left: 10px;
+    margin-right: 20px;
+    width: 284px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(204, 201, 201);
+    border-radius: 5px;
+    
+}
+.item-info .info{
+    padding-left: 10px;
+}
+.item-cards{
+    display: flex;
+}
