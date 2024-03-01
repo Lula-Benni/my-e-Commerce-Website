@@ -40,3 +40,40 @@ footer p{
 .item-cards{
     display: flex;
 }
+.category-cards{
+    display: flex;
+}
+.category-btn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.category-btn button{
+    background-color: rgb(93, 127, 251);
+    border: none;
+    height: 40px;
+    width: 150px;
+}
+.category-btn a{
+    text-decoration: none;
+}
+.cart-btns{
+    display: flex;
+    padding-left: 6rem;
+}
+.cart-btns button{
+    background-color: rgb(93, 127, 251);
+    border: none;
+}
+.cart-btns a{
+    text-decoration: none;
+}
+.quantity{
+    padding: 10px;
+}
+.add-btn button{
+    width: 19px;
+}
