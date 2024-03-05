@@ -34,6 +34,23 @@ footer p{
     border-radius: 5px;
     
 }
+.home-item-cards .item-info{
+    margin-left: 10px;
+    width: 284px;
+    justify-content:left;
+    border: 2px solid rgb(204, 201, 201);
+    border-radius: 5px;
+    
+}
+.home-item-cards{
+    display: flex;
+    margin-left: 7%;
+    margin-bottom: 5%;
+}
+h4{
+    margin-left: 45%;
+
+}
 .item-info .info{
     padding-left: 10px;
 }
