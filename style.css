@@ -1,3 +1,9 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
 .navbar h6{
     padding-left: 1%;
     color: red;
@@ -52,8 +58,9 @@ h4{
 }
 .view-item-cards{
     display: flex;
-    justify-content: center;
-    align-items: center;
+      justify-content: center;
+        align-items: start;
+        height: 100vh;
 }
 .item-info .info{
     padding-left: 10px;
@@ -61,9 +68,20 @@ h4{
 .item-cards{
     display: flex;
 }
+/*Category*/
 .category-cards{
     display: flex;
-    margin-left: 15%;
+    justify-content: center;
+    align-items: start;
+    height: 100vh;
+}
+.w-category-cards{
+    display: flex;
+        justify-content: center;
+        align-items: start;
+        height: 100vh;
+        margin-left: 5%;
+
 }
 .category-btn{
     margin-top: 10px;
@@ -138,4 +156,102 @@ h4{
 .contact p{
     padding-left: 20px;
     padding-right: 10px;
+}
+body{
+    margin-top: 8rem;
+}
+@media screen and (max-width: 920px) {
+    .category-cards{
+        margin-left: 1%;
+    }
+    .w-category-cards{
+                margin-left: 1%;
+    }
+    nav h6{
+        visibility: hidden;
+    }
+    .item-info{
+        margin-left: 1px;
+            margin-right: 2px;
+    }
+    .item-cards{
+        margin-left: 1%;
+    }
+    .home-item-cards{
+        margin-left: 1%;
+    }
+}
+@media screen and (max-width: 799px) {
+    .category-cards{
+        display: block;
+        margin-left: 25%;
+    }
+    .w-category-cards{
+            display: block;
+
+                    margin-left: 25%;
+        }
+    .item-cards{
+        display: block;
+                 margin-left: 25%;
+    }
+    .home-item-cards{
+         display: block;
+         margin-left: 25%;
+    }
+    body h4{
+        margin-right: 20rem;
+    }
+}
+@media screen and (max-width: 420px) {
+    .category-cards{
+        margin-left: 10%;
+    }
+    .w-category-cards{
+                    margin-left: 10%;
+        }
+    .item-cards{
+                margin-left: 10%;
+
+    }
+    .home-item-cards{
+                margin-left: 10%;
+
+    }
+    body{
+        margin-top: 12rem;
+    }
+}
+@media screen and (max-width: 350px) {
+    .category-cards{
+        margin-left: 1%;
+    }
+    .w-category-cards{
+                    margin-left: 1%;
+        }
+    .item-cards{
+                margin-left: 1%;
+
+    }
+    .home-item-cards{
+                margin-left: 1%;
+
+    }
+    body{
+            margin-top: 14rem;
+        }
+}
+@media screen and (max-width: 600px){
+    footer .links{
+        flex-direction: column;
+        padding: 10px 20%;
+    }
+
+    /*Reducing skills flex div*/
+    .flex{
+        -webkit-transform:scale(0.5);
+        -moz-transform:scale(0.5);
+        -ms-transform:scale(0.5);
+        transform:scale(0.5);
+    }
 }
