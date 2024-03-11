@@ -1,20 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
 *{
     padding: 0;
     margin: 0;
     text-align: center;
     box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;}
 }
 .navbar h6{
     padding-left: 1%;
     color: red;
 }
 nav{
+    background-color: black;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+}
+.nav-link{
+    color: white;
+}
+.fa{
+    color: white;
 }
 body{
     margin-top: 4rem;
 }
 footer{
+    background-color: black;
+    margin-top: 50px;
     box-shadow: 2px 0 4px 0 rgba(0,0,0,.1);
 }
 footer .links{
@@ -50,17 +61,17 @@ footer p{
 }
 .home-item-cards{
     display: flex;
-    margin-left: 7%;
     margin-bottom: 5%;
 }
 h4{
-    margin-left: 45%;
+    margin-left: 5%;
 }
 .view-item-cards{
     display: flex;
       justify-content: center;
         align-items: start;
         height: 100vh;
+        width: 100vh;
 }
 .item-info .info{
     padding-left: 10px;
@@ -135,7 +146,7 @@ h4{
     border: 2px solid black;
     border-radius: 5px;
     margin-left: 35%;
-    width: 30%;
+    width: 50%;
 }
 .about h5{
     padding: 20px;
@@ -160,12 +171,22 @@ h4{
 body{
     margin-top: 8rem;
 }
+@media screen and (max-width: 1240px) {
+    .home-item-cards{
+        display: flex;
+        margin-left: 1%;
+    }
+}
 @media screen and (max-width: 920px) {
     .category-cards{
         margin-left: 1%;
     }
     .w-category-cards{
                 margin-left: 1%;
+    }
+    .view-item-cards{
+                        margin-left: 1%;
+
     }
     nav h6{
         visibility: hidden;
@@ -195,15 +216,19 @@ body{
         display: block;
                  margin-left: 25%;
     }
+    .view-item-cards{
+           display: block;
+           margin-left: 25%;
+        }
     .home-item-cards{
          display: block;
          margin-left: 25%;
     }
-    body h4{
-        margin-right: 20rem;
+    .contact{
+          width: 15rem;
     }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 450px) {
     .category-cards{
         margin-left: 10%;
     }
@@ -214,6 +239,9 @@ body{
                 margin-left: 10%;
 
     }
+    .view-item-cards{
+               margin-left: 10%;
+    }
     .home-item-cards{
                 margin-left: 10%;
 
@@ -221,6 +249,24 @@ body{
     body{
         margin-top: 12rem;
     }
+    footer{
+        margin-top: 27rem;
+    }
+    .about h5{
+            font-size: 14px;
+        }
+        .about p{
+            font-size: 10px;
+        }
+    contact h5{
+            font-size: 14px;
+        }
+        .contact p{
+            font-size: 10px;
+       }
+       .contact{
+            width: 10rem;
+       }
 }
 @media screen and (max-width: 350px) {
     .category-cards{
@@ -233,6 +279,9 @@ body{
                 margin-left: 1%;
 
     }
+    .view-item-cards{
+                   margin-left: 1%;
+        }
     .home-item-cards{
                 margin-left: 1%;
 
@@ -240,11 +289,29 @@ body{
     body{
             margin-top: 14rem;
         }
+        footer{
+                        margin-top: 35rem;
+            }
+    .about h5{
+        font-size: 14px;
+    }
+    .about p{
+        font-size: 10px;
+    }
+    .contact h5{
+        font-size: 14px;
+    }
+    .contact p{
+        font-size: 10px;
+    }
+    .contact{
+                width: 10rem;
+           }
 }
 @media screen and (max-width: 600px){
     footer .links{
         flex-direction: column;
-        padding: 10px 20%;
+        padding: 10px 40%;
     }
 
     /*Reducing skills flex div*/
