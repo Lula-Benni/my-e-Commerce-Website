@@ -10,6 +10,9 @@
     padding-left: 1%;
     color: red;
 }
+.navbar{
+    z-index: 1;
+}
 nav{
     background-color: black;
     overflow: hidden;
@@ -27,12 +30,25 @@ nav ul li {
 .nav-link{
     color: white;
 }
+.nav-items{
+    display: flex;
+    gap: 1rem;
+}
+input[type=checkbox]{
+    display: none;
+}
+.hamburger{
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
 .fa{
     color: white;
 }
 footer{
     background-color: black;
     box-shadow: 2px 0 4px 0 rgba(0,0,0,.1);
+    width: 100%;
 }
 footer .links{
     display: flex;
@@ -55,7 +71,7 @@ footer p{
     align-items: center;
     border: 2px solid rgb(204, 201, 201);
     border-radius: 5px;
-    
+
 }
 .home-item-cards .item-info{
     margin-left: 10px;
@@ -176,12 +192,24 @@ footer p{
     padding-right: 10px;
 }
 body{
-    padding-top:
+    padding-top: 5rem;
 }
-@media screen and (max-width: 625px) {
-    nav ul li {
+@media screen and (max-width: 709px) {
+    /*nav ul li {
       float: none;
       width: 100%;
+    }*/
+    .nav-items{
+        display: none;
+    }
+    input[type=checkbox]:checked ~ .nav-items{
+        display: block;
+        padding: 0% 40%;
+    }
+    .nav-items>a{
+    }
+    .hamburger{
+        display: block;
     }
     .category-cards{
         justify-content: center;
