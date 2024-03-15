@@ -43,6 +43,10 @@ input[type=checkbox]{
     user-select: none;
     padding-right: 2rem;
     color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 nav h6{
     padding-left: 1rem;
