@@ -41,6 +41,12 @@ input[type=checkbox]{
     display: none;
     font-size: 24px;
     user-select: none;
+    padding-right: 2rem;
+    color: white;
+}
+nav h6{
+    padding-left: 1rem;
+    color: red;
 }
 .fa{
     color: white;
@@ -252,53 +258,11 @@ body{
         font-size: 10px;
    }
 }
-/*
-@media screen and (max-width: 350px) {
-    .category-cards{
-        margin-left: 1%;
-    }
-    .w-category-cards{
-                    margin-left: 1%;
-        }
-    .item-cards{
-                margin-left: 1%;
-
-    }
-    .view-item-cards{
-                   margin-left: 1%;
-        }
-    .home-item-cards{
-                margin-left: 1%;
-
-    }
-    body{
-            margin-top: 14rem;
-        }
-        footer{
-                        margin-top: 35rem;
-            }
-    .about h5{
-        font-size: 14px;
-    }
-    .about p{
-        font-size: 10px;
-    }
-    .contact h5{
-        font-size: 14px;
-    }
-    .contact p{
-        font-size: 10px;
-    }
-    .contact{
-                width: 10rem;
-           }
-}*/
 @media screen and (max-width: 600px){
     footer .links{
         flex-direction: column;
         padding: 10px 40%;
     }
-
     /*Reducing skills flex div*/
     .flex{
         -webkit-transform:scale(0.5);
