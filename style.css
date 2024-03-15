@@ -145,6 +145,9 @@ footer p{
 .category-btn a{
     text-decoration: none;
 }
+.remove-btn button{
+    width: 19px;
+}
 .cart-btns{
     display: flex;
 }
