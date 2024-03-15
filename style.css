@@ -205,7 +205,7 @@ footer p{
 body{
     padding-top: 5rem;
 }
-@media screen and (max-width: 709px) {
+@media screen and (max-width: 725px) {
     /*nav ul li {
       float: none;
       width: 100%;
