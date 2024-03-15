@@ -12,7 +12,17 @@
 }
 nav{
     background-color: black;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+    overflow: hidden;
+    padding-bottom: 5rem;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    float: left;
 }
 .nav-link{
     color: white;
@@ -20,12 +30,8 @@ nav{
 .fa{
     color: white;
 }
-body{
-    margin-top: 4rem;
-}
 footer{
     background-color: black;
-    margin-top: 50px;
     box-shadow: 2px 0 4px 0 rgba(0,0,0,.1);
 }
 footer .links{
@@ -61,38 +67,39 @@ footer p{
 }
 .home-item-cards{
     display: flex;
+    flex-wrap: wrap;
+
     margin-bottom: 5%;
-}
-h4{
-    margin-left: 5%;
 }
 .view-item-cards{
     display: flex;
-      justify-content: center;
-        align-items: start;
-        height: 100vh;
-        width: 100vh;
+    justify-content: center;
+    align-items: start;
 }
 .item-info .info{
-    padding-left: 10px;
+    padding-left: 10%;
+}
+.item-info{
+    margin-bottom: 5%;
 }
 .item-cards{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: start;
 }
 /*Category*/
 .category-cards{
     display: flex;
-    justify-content: center;
-    align-items: start;
-    height: 100vh;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
 }
 .w-category-cards{
     display: flex;
-        justify-content: center;
-        align-items: start;
-        height: 100vh;
-        margin-left: 5%;
-
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: start;
 }
 .category-btn{
     margin-top: 10px;
@@ -159,7 +166,7 @@ h4{
     border: 2px solid black;
     border-radius: 5px;
     margin-left: 35%;
-    width: 30%;
+    width: 50%;
 }
 .contact h5{
     padding: 20px;
@@ -169,105 +176,55 @@ h4{
     padding-right: 10px;
 }
 body{
-    margin-top: 8rem;
+    padding-top:
 }
-@media screen and (max-width: 1240px) {
-    .home-item-cards{
-        display: flex;
-        margin-left: 1%;
+@media screen and (max-width: 625px) {
+    nav ul li {
+      float: none;
+      width: 100%;
     }
-}
-@media screen and (max-width: 920px) {
     .category-cards{
-        margin-left: 1%;
+        justify-content: center;
     }
     .w-category-cards{
-                margin-left: 1%;
-    }
-    .view-item-cards{
-                        margin-left: 1%;
-
-    }
-    nav h6{
-        visibility: hidden;
-    }
-    .item-info{
-        margin-left: 1px;
-            margin-right: 2px;
-    }
-    .item-cards{
-        margin-left: 1%;
+        justify-content: center;
     }
     .home-item-cards{
-        margin-left: 1%;
+        justify-content: center;
+    }
+    .item-cards{
+        justify-content: center;
     }
 }
-@media screen and (max-width: 799px) {
-    .category-cards{
-        display: block;
-        margin-left: 25%;
+@media screen and (max-width: 990px) {
+    .about h5{
+        font-size: 14px;
     }
-    .w-category-cards{
-            display: block;
-
-                    margin-left: 25%;
-        }
-    .item-cards{
-        display: block;
-                 margin-left: 25%;
+     .about p{
+        font-size: 12px;
+     }
+    contact h5{
+        font-size: 14px;
     }
-    .view-item-cards{
-           display: block;
-           margin-left: 25%;
-        }
-    .home-item-cards{
-         display: block;
-         margin-left: 25%;
-    }
-    .contact{
-          width: 15rem;
-    }
+    .contact p{
+        font-size: 12px;
+   }
 }
 @media screen and (max-width: 450px) {
-    .category-cards{
-        margin-left: 10%;
-    }
-    .w-category-cards{
-                    margin-left: 10%;
-        }
-    .item-cards{
-                margin-left: 10%;
-
-    }
-    .view-item-cards{
-               margin-left: 10%;
-    }
-    .home-item-cards{
-                margin-left: 10%;
-
-    }
-    body{
-        margin-top: 12rem;
-    }
-    footer{
-        margin-top: 27rem;
-    }
     .about h5{
-            font-size: 14px;
-        }
-        .about p{
-            font-size: 10px;
-        }
+        font-size: 14px;
+    }
+    .about p{
+        font-size: 10px;
+    }
     contact h5{
-            font-size: 14px;
-        }
-        .contact p{
-            font-size: 10px;
-       }
-       .contact{
-            width: 10rem;
-       }
+        font-size: 14px;
+    }
+    .contact p{
+        font-size: 10px;
+   }
 }
+/*
 @media screen and (max-width: 350px) {
     .category-cards{
         margin-left: 1%;
@@ -307,7 +264,7 @@ body{
     .contact{
                 width: 10rem;
            }
-}
+}*/
 @media screen and (max-width: 600px){
     footer .links{
         flex-direction: column;
